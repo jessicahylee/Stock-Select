@@ -1,0 +1,29 @@
+.container__div {
+  &-div {
+    display: flex;
+    flex-direction: row;
+  }
+  &-container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 175px;
+    padding-top: 20px;
+  }
+  &-icon1 {
+    padding-top: 7px;
+  }
+  &-icon3 {
+    padding-top: 7px;
+  }
+  &-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  &-containerInfo {
+    padding-right: 10px;
+  }
+  &-containerSupport {
+    padding-right: 10px;
+  }
+}

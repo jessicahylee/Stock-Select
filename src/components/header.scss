@@ -1,0 +1,39 @@
+.header__container {
+  &-div {
+    display: flex;
+    background-color: white;
+
+  }
+  &-image {
+    width: 100px;
+    height: 10px;
+    
+  }
+  &-paragraphs {
+    display: flex;
+    flex-direction: row;
+    padding-top:46px;
+  padding-left: 10px;
+  }
+  &-paragraph {
+    padding-left: 100px;
+  }
+  &-paragraph1 {
+    padding-left: 30px;
+  }
+  &-logo {
+    padding-left: 20px;
+  }
+  &-login{
+    text-decoration: none;
+    color: black;
+  }
+   &-profile{
+    text-decoration: none;
+     color: black;
+  }
+    &-form{
+    text-decoration: none;
+     color: black;
+  }
+}
