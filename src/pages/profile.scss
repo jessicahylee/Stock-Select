@@ -1,0 +1,14 @@
+.profile-page {
+  &__avatar {
+    width: 12rem;
+    padding: 0.5rem;
+    background-color: #e4f1e8;
+  }
+  &__logout-wrapper {
+    margin-top: 2rem;
+  }
+}
+.posts-page {
+  position: relative;
+  padding-bottom: 175px;
+}
