@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import './profile.scss'
 
-// const SERVER_URL = process.env.REACT_APP_SERVER_URL
+const SERVER_URL = 'http://localhost:5173'
 
 const Profile = () => {
   const [isAuthenticating, setIsAuthenticating] = useState(true)

@@ -5,6 +5,7 @@ import Home from './pages/home'
 import Form from './components/form'
 import Profile from './pages/profile'
 import './styles/global.scss'
+import Login from './pages/login'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="form" element={<Form />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
       <Footer />
     </div>
