@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import './profile.scss'
 
-const SERVER_URL = 'http://localhost:5173'
+const SERVER_URL = 'http://localhost:5050'
 
 const Profile = () => {
   const [isAuthenticating, setIsAuthenticating] = useState(true)
@@ -44,12 +44,12 @@ const Profile = () => {
       {isLoggedIn ? (
         profileData && (
           <>
-            <h2>Hello, {profileData.username}</h2>
+            <h2>Hello, {profileData.given_name}</h2>
             <h3>Registered since: {formatDate(profileData.updated_at)}</h3>
             <img
               className="profile-page__avatar"
-              src={profileData.avatar_url}
-              alt={`${profileData.username} avatar`}
+              src={picture.avatar_url}
+              alt={`${profileData.given_name} avatar`}
             />
             <div className="profile-page__logout-wrapper">
               {/* Render a logout button */}
