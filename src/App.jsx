@@ -7,7 +7,6 @@ import Profile from './pages/profile'
 import './styles/global.scss'
 import Login from './pages/login'
 
-
 function App() {
   return (
     <div>
