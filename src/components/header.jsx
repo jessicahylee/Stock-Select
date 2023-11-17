@@ -7,7 +7,7 @@ function Header() {
     <div className="header__container-div">
       <div className="header__container-logo">
         <Link to="/">
-          <img classname="header__container-image" width="130px" src={logo} />
+          <img className="header__container-image" width="130px" src={logo} />
         </Link>
       </div>
 

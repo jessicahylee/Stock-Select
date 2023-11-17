@@ -6,6 +6,8 @@ import Form from './components/form'
 import Profile from './pages/profile'
 import './styles/global.scss'
 import Login from './pages/login'
+import Coins from './pages/coins'
+import CoinDisplay from './pages/CoinsDisplay'
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="form" element={<Form />} />
+        <Route path="/bitcoins" element={<Coins/>}/>
+        <Route path="/bitcoins/:id" element={<CoinDisplay/>}/>
         <Route path="/profile" element={<Profile />} />
         <Route path="/login" element={<Login />} />
       </Routes>

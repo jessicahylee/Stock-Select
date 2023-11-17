@@ -2,18 +2,16 @@
   &-div {
     display: flex;
     background-color: white;
-
   }
   &-image {
     width: 100px;
-    height: 10px;
-    
+    height: 100px;
   }
   &-paragraphs {
     display: flex;
     flex-direction: row;
-    padding-top:46px;
-  padding-left: 10px;
+    padding-top: 46px;
+    padding-left: 10px;
   }
   &-paragraph {
     padding-left: 100px;
@@ -24,16 +22,16 @@
   &-logo {
     padding-left: 20px;
   }
-  &-login{
+  &-login {
     text-decoration: none;
     color: black;
   }
-   &-profile{
+  &-profile {
     text-decoration: none;
-     color: black;
+    color: black;
   }
-    &-form{
+  &-form {
     text-decoration: none;
-     color: black;
+    color: black;
   }
 }
