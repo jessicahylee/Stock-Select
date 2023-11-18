@@ -1,0 +1,16 @@
+.banner__container {
+  position: relative;
+  width: 100%;
+  &-div {
+    background-image: url(../assets/banner.png);
+    width: 100vw;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}

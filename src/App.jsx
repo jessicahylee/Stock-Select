@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="form" element={<Form />} />
-        <Route path="/bitcoins" element={<Coins/>}/>
+        <Route path="/coins" element={<Coins/>}/>
         <Route path="/bitcoins/:id" element={<CoinDisplay/>}/>
         <Route path="/profile" element={<Profile />} />
         <Route path="/login" element={<Login />} />

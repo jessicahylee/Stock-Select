@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+
 import './form.scss'
 import axios from 'axios'
 
@@ -7,6 +9,8 @@ function Form() {
   const [option, setOption] = useState('option1')
   const [option1, setOption1] = useState('option1')
   const [option2, setOption2] = useState('option1')
+
+  const Navigate = useNavigate()
 
   const handleDropdownChange = (event) => {
     setSelectedOption(event.target.value)
@@ -28,10 +32,12 @@ function Form() {
     console.log('Selected Region:', option)
     console.log('Selected Market CAP:', option1)
     console.log('Selected Dividend Pay:', option2)
+
+    Navigate('/Coins')
   }
   return (
     <div className="form__container-div">
-      <h3 className="form__container-header"> Start Investing Today </h3>
+      <h3 className="form__container-header"> Buy a Crypto today </h3>
       <form onSubmit={handleSubmit}>
         <div className="form__container-sector">
           <label className="form__container-sector-label">
