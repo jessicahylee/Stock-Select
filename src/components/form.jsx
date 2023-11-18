@@ -37,7 +37,10 @@ function Form() {
   }
   return (
     <div className="form__container-div">
-      <h3 className="form__container-header"> Buy a Crypto today </h3>
+      <h3 className="form__container-header">
+        {' '}
+        Buy Crypto today, but first do your research{' '}
+      </h3>
       <form onSubmit={handleSubmit}>
         <div className="form__container-sector">
           <label className="form__container-sector-label">

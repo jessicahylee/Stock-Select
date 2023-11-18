@@ -1,16 +1,20 @@
 import banner from '../assets/banner.png'
-import image from '../assets/Banner_picture.png'
+import image from '../assets/banner_image_crypto.png'
 import './banner.scss'
 
 function Banner() {
   return (
     <div className="banner__container">
       <div className="banner__container-div">
-        <h3> hahaha </h3>
+        <h3 className="banner__container-title">
+          {' '}
+          LEARN CORRECT WITH CRYPTO SELECT!{' '}
+        </h3>
+
         <img
           className="banner__container-banner"
           src={image}
-          width="100vx"
+          width="130vx"
           height="150px"
         />
       </div>
