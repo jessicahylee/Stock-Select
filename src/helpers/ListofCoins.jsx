@@ -1,5 +1,5 @@
 import Ethereum from '../assets/ethereum-symbol.png'
-import Bitcoin from '../assets/bitcoin_symbol.jpeg'
+import Bitcoin from '../assets/Bitcoin-Logo.png'
 import Dogecoin from '../assets/dogecoin_symbol.jpeg'
 import Litecoin from '../assets/litecoin_symbol.webp'
 import Ripple from '../assets/ripple_symbol.jpeg'
@@ -30,12 +30,14 @@ export const ListofCoins = [
     name: 'Litecoin',
     price: '$95.45',
     image: Litecoin,
-    description: 'Litecoin is a decentralized peer-to-peer cryptocurrency and open-source software project released under the MIT/X11 license. Inspired by Bitcoin, Litecoin was among the earliest altcoins, starting in October 2011.In technical details, the Litecoin main chain shares a slightly modified Bitcoin codebase. The practical effects of those codebase differences are lower transaction fees,[5] faster transaction confirmations,[4 historically been referred to as the "silver to Bitcolock"'
+    description:
+      'Litecoin is a decentralized peer-to-peer cryptocurrency and open-source software project released under the MIT/X11 license. Inspired by Bitcoin, Litecoin was among the earliest altcoins, starting in October 2011.In technical details, the Litecoin main chain shares a slightly modified Bitcoin codebase. The practical effects of those codebase differences are lower transaction fees,[5] faster transaction confirmations,[4 historically been referred to as the "silver to Bitcolock"',
   },
   {
     name: 'Ripple',
     price: '$0.84',
     image: Ripple,
-    description: 'In December 2020, Ripple Labs and two of its executives were sued by the  (SEC) for selling XRP tokens, which the SEC classified as unregistered securities. In July 2023, the court ruled that XRP, as a digital token, is not in and of itself a contract, transaction, or scheme that embodies the Howey requirements of an investment contract.',
+    description:
+      'In December 2020, Ripple Labs and two of its executives were sued by the  (SEC) for selling XRP tokens, which the SEC classified as unregistered securities. In July 2023, the court ruled that XRP, as a digital token, is not in and of itself a contract, transaction, or scheme that embodies the Howey requirements of an investment contract.',
   },
 ]
