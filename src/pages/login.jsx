@@ -11,7 +11,7 @@ const PostsLogin = () => {
   const PageLogin = () => {
     // Make sure to user `withCredentials` for a GET request, to pass the cookie to the server
     axios
-      .get(`${SERVER_URL}/google`, { withCredentials: true })
+      .get(`${SERVER_URL}/auth/google`, { withCredentials: true })
       .then((posts) => {
         // Update state with fetched posts
         setLogin(posts.data)

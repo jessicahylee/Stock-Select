@@ -45,30 +45,26 @@ function Form() {
         <div className="form__container-sector">
           <label className="form__container-sector-label">
             <div className="form__container-div-paragraph">
-              <p className="form__container-paragraph-sector">
-                Select a Sector:
-              </p>
+              <p className="form__container-paragraph-sector">Price</p>
             </div>
             <select
               className="select_sector"
               value={selectedOption}
               onChange={handleDropdownChange}
             >
-              <option value="option1">Technology</option>
-              <option value="option2">Finance</option>
+              <option value="option1"> Less than $10K</option>
+              <option value="option2"> More than $10K</option>
             </select>
           </label>
         </div>
         <div className="form__container-region">
           <label className="form__container-region-label">
             <div className="form__container-div-paragraph-region">
-              <p className="form__container-paragraph-region">
-                Select a Region:
-              </p>
+              <p className="form__container-paragraph-region">Supply</p>
             </div>
             <select className="select_region" value={option} onChange={Option}>
-              <option value="option1">Canada</option>
-              <option value="option2">USA</option>
+              <option value="option1"> Less then 15M</option>
+              <option value="option2"> More than 15M</option>
             </select>
           </label>
         </div>
@@ -94,7 +90,7 @@ function Form() {
           <label className="form__container-divident-label">
             <div className="form__container-div-paragraph-divident">
               <p className="form__container-paragraph-divident">
-                Divident Pay:
+                Crypto Staking
               </p>
             </div>
             <select

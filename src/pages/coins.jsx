@@ -10,7 +10,11 @@ function coins() {
       <div className="coin__container-div">
         {ListofCoins.map((bitcoin, idx) => {
           return (
-            <BitcoinItem id={idx} name={bitcoin.name} image={bitcoin.image} />
+            <BitcoinItem
+              id={idx}
+              name={bitcoin.name}
+              image={bitcoin.image}
+            />
           )
         })}
       </div>
