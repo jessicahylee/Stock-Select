@@ -18,9 +18,7 @@ const Profile = () => {
         setProfileData(res.data)
       })
       .catch((err) => {
-        // If we are getting back 401 (Unauthorized) back from the server, means we need to log in
-        if (err.response.status === 401) {
-          // Update the state: done authenticating, user is not logged in
+        if (err.response && err.response.status === 401) {
           setIsAuthenticating(false)
           setIsLoggedIn(false)
         } else {
@@ -30,17 +28,27 @@ const Profile = () => {
   }, [])
 
   const formatDate = (date) => {
-    // Return date formatted as 'month/day/year'
     return new Date(date).toLocaleDateString('en-US')
   }
 
-  // While the component is authenticating, do not render anything (alternatively, this can be a preloader)
+  const handleLogout = async () => {
+    try {
+      await axios.post(
+        `${SERVER_URL}/auth/logout`,
+        {},
+        { withCredentials: true },
+      )
+      setIsLoggedIn(false)
+    } catch (error) {
+      console.log('Error logging out:', error)
+    }
+  }
+
   if (isAuthenticating) return null
 
   return (
     <section className="profile-page">
       <h1>Profile Page</h1>
-      {/* If user is logged in, render their profile information */}
       {isLoggedIn ? (
         profileData && (
           <>
@@ -48,16 +56,15 @@ const Profile = () => {
             <h3>Registered since: {formatDate(profileData.updated_at)}</h3>
             <img
               className="profile-page__avatar"
-              src={picture.avatar_url}
+              src={profileData.avatar_url}
               alt={`${profileData.given_name} avatar`}
             />
             <div className="profile-page__logout-wrapper">
-              {/* Render a logout button */}
+              <button onClick={handleLogout}>Logout</button>
             </div>
           </>
         )
       ) : (
-        // If user is not logged in, render a login button
         <>
           <p>
             <strong>This page requires authentication.</strong>
