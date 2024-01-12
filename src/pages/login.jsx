@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import './login.scss'
 
 const SERVER_URL = 'http://localhost:5050'
 

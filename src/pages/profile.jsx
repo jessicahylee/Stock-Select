@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import './profile.scss'
 
@@ -18,12 +18,9 @@ const Profile = () => {
         setProfileData(res.data)
       })
       .catch((err) => {
-        if (err.response && err.response.status === 401) {
-          setIsAuthenticating(false)
-          setIsLoggedIn(false)
-        } else {
-          console.log('Error authenticating', err)
-        }
+        setIsAuthenticating(false)
+        setIsLoggedIn(false)
+        console.log('Error authenticating', err)
       })
   }, [])
 
@@ -76,3 +73,4 @@ const Profile = () => {
 }
 
 export default Profile
+
