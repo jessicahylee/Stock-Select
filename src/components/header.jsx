@@ -6,8 +6,8 @@ function Header() {
   return (
     <div className="header__container-div">
       <div className="header__container-logo">
-        <Link to="/">
-          <img className="header__container-image" src={logo} />
+        <Link className="header__container-logo" to="/">
+          <h3 className="header__container-image" > CRYPTO SELECT </h3>
         </Link>
       </div>
 
