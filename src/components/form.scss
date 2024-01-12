@@ -1,11 +1,10 @@
 .form__container-div {
   display: flex;
   flex-direction: column;
-  border: 1px solid black; // first Div
   border-radius: 20px;
   padding-bottom: 30px;
   padding-top: 10px;
-  background-color: rgb(245, 239, 247);
+     background: linear-gradient(90deg, #fff7ad, #ffa9fa);
 }
 .form__container-header {
   padding-left: 40px;

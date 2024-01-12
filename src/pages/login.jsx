@@ -40,10 +40,15 @@ const Login = () => {
 
   return (
     <div className="login__container-div">
-      <h2 className="login__container-title">Welcome to Stock Select!</h2>
-      <button onClick={handleLogin}>Login with Google</button>
+      <h2 className="login__container-title">Welcome to Crypto Select</h2>
+      <div className="login__container-div-button">
+        
+      <button className="login__container-button"onClick={handleLogin}>CONTINUE  WITH GOOGLE</button>
       {login.username && <p>Logged in user: {login.username}</p>}
-      {/* Add more rendering logic based on the 'login' state */}
+  
+      <button className="login__container-facebook"onClick>CONTINUE  WITH FACEBOOK </button>
+      <button className="login__container-apple"onClick>CONTINUE  WITH APPLE</button>
+   </div>
     </div>
   )
 }
