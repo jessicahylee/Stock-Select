@@ -1,5 +1,4 @@
 import './header.scss'
-import logo from '../assets/CRYPTO_SELECT.png'
 import { Link } from 'react-router-dom'
 
 function Header() {

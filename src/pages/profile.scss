@@ -1,14 +1,15 @@
-.profile-page {
-  &__avatar {
-    width: 12rem;
-    padding: 0.5rem;
-    background-color: #e4f1e8;
+.profile__page{
+   background: linear-gradient(90deg, #fff7ad, #ffa9fa);
+  &-title{
+     font-size: x-large;
+    color: grey;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
   }
-  &__logout-wrapper {
-    margin-top: 2rem;
+  &-hello{
+ font-size: large;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
   }
-}
-.posts-page {
-  position: relative;
-  padding-bottom: 175px;
 }
