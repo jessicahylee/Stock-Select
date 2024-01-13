@@ -10,7 +10,7 @@ function BitcoinItem({ image, name, id }) {
         navigate('/bitcoins/' + id)
       }}
     >
-      <h3    style={{ fontWeight: 'normal' }} >{name}</h3>
+      <h3    style={{ fontWeight: 'normal'  }} >{name}</h3>
     </div>
   )
 }
