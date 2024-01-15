@@ -49,12 +49,12 @@ const Profile = () => {
       {isLoggedIn ? (
         profileData ? (
           <>
-            <h2 className="profile__page-hello">Hello, {profileData.given_name}! Welcome to CyrptoSelect</h2>
+            <h2 className="profile__page-hello">Hello, {profileData.username}! Welcome to CyrptoSelect</h2>
             <h3 className="profile__page-hello">Registered since: {formatDate(profileData.updated_at)}</h3>
             <img
               className="profile-page__avatar"
               src={profileData.avatar_url}
-              alt={`${profileData.given_name} avatar`}
+    
             />
             <div className="profile-page__logout-wrapper">
               <button onClick={handleLogout}>Logout</button>
