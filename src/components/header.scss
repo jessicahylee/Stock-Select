@@ -2,10 +2,12 @@
   &-div {
     display: flex;
     justify-content: space-between;
-    padding: 5px;
+    // padding: 5px;
     background: linear-gradient(90deg, #fff7ad, #ffa9fa);
     width: 100%;
     align-items: center;
+    // padding-left: 10px;
+   
   }
   &-image {
   font-family: 'Quicksand', sans-serif;
@@ -21,6 +23,7 @@
     flex-direction: row;
     gap: 10px;
     padding-right: 10px;
+   
     
   }
   &-paragraph {
@@ -33,22 +36,23 @@
      font-family: 'Quicksand', sans-serif;
   }
 
-  &-paragraph1 {
-    // padding-left: 30px;
-  }
+  // &-paragraph1 {
+  //   // padding-left: 30px;
+  // }
   &-logo {
    text-decoration: none;
+   padding-left: 10px;
   }
-  &-login {
-    // text-decoration: none;
-    // color: black;
-  }
-  &-profile {
-    // text-decoration: none;
-    // color: black;
-  }
-  &-form {
-    // text-decoration: none;
-    // color: black;
-  }
+  // &-login {
+  //   // text-decoration: none;
+  //   // color: black;
+  // }
+  // &-profile {
+  //   // text-decoration: none;
+  //   // color: black;
+  // }
+  // &-form {
+  //   // text-decoration: none;
+  //   // color: black;
+  // }
 }
